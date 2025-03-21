@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+body{
+    background-color: #faf9f8;
+}
+.page-wrapper{
+    max-width:1300px;
+    margin: 0 auto; 
+}
+nav{
+    height: 200px;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+nav menu button{
+    font-size: 20px;
+    margin: 20px;
+    padding:10px ;
+    letter-spacing: 2px;
+    border: none;
+    background-color:#e8e3de ;
+
+}
+section.header{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+section.header img.profile{
+    margin: 0 auto;
+    width: 480px;
+    height: 500px;
+    box-shadow: -100px 70px 0px 0px rgba(232,227,222,1);
+}
+section.header .text{
+    max-width: 600px;
+    margin: 0 auto;
+}
+section.header .text p.header-txt{
+    font-weight: 500;
+    margin: 50px;
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 5px;
+
+}
+section.header .text p{
+    font-size: 18pt;
+    text-align: center;
+    margin-bottom: 50px;
+}
+section.header .text .boo {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    max-width: 250px;    
+    margin-bottom: 15px;
+
+} 
+section.header .text .boo img {
+    width: 50px;
+    height: 50px;
+}
+section.header .text .boo a,section.header .text .boo p{
+    margin: 5px;
+    font-size: 15pt;
+    text-decoration: none;
+    color: black;
+    } 
