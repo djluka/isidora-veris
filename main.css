@@ -15,17 +15,20 @@ body{
 .page-wrapper{
     max-width:1200px;
     margin: 0 auto; 
+    padding: 5px;
 }
 nav{
     height: 150px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     padding: 5px;
+    text-align: center;
 
 }
 nav p {
+    align-items: center;
     font-size: 1.5em;
     font-weight: 600;
     letter-spacing: 0.2em;
@@ -34,7 +37,7 @@ nav p {
 }
 nav menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 550px;
@@ -47,6 +50,11 @@ nav menu button{
     letter-spacing: 2px;
     border: none;
     background-color:#e8e3de ;
+
+}
+nav menu button:active{
+    background-color:#b9b5b0 ;
+
 }
 section.header{
     margin-top: 10px;
@@ -56,34 +64,48 @@ section.header{
     flex-wrap: wrap;
 
 }
+/*img needresponsive fix*/
 section.header img.profile{
-    margin: 0 auto;
-    width: 400px;
-    height: 400px;
+    margin: 10px auto;
+    width: 470px;
+    height: 470px;
     box-shadow: -120px 50px 0px 0px rgba(232,227,222,1);
 }
 section.header .text{
-    max-width: 600px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    max-width: 500px;
+    font-family: Georgia,Times New Roman,serif;
+
+    
+
 }
 section.header .text p.header-txt{
-    font-weight: 500;
-    margin: 50px;
+    margin:50px auto ;
     font-size: 3em;
-    text-align: center;
+    text-align: center;    
     letter-spacing: 5px;
+    line-height: 45px;
+
 
 }
 section.header .text p{
-    font-size: 18pt;
+    font-size: 1em;
+    font-weight: 400;
     text-align: center;
     margin-bottom: 50px;
+    line-height: 25px;
+    letter-spacing: 1px;
+
 }
 section.header .text .boo {
     display: flex;
     align-items: center;
     text-align: start;
-    max-width: 250px;    
+    max-width: 350px;    
     margin-bottom: 15px;
 
 } 

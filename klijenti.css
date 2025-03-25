@@ -1,0 +1,47 @@
+
+.klijenti{
+    margin-top: 150px;
+}
+.klijenti p.klijenti-header{
+    padding: 20px;
+    font-size: 3em;
+    font-weight: none;
+}
+.klijenti-holder{
+    background-color: #e8e3de;
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.single-klijenti{
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px;
+    text-align: center;
+    
+}
+.single-klijenti video{
+    background-color: red;
+    width: 100%;
+    height: 480px;
+}
+.single-klijenti :nth-child(2) {
+    background-color: white;
+    font-size: 15pt;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 50px;
+    position: relative;
+    top: 60%;
+    transform: translateY(-60%);
+
+}
+.single-klijenti :nth-child(3) {
+    font-size: 13pt;
+    
+}

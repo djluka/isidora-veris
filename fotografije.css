@@ -1,0 +1,42 @@
+ .fotografije{
+    margin-top: 100px;
+}
+.fotografije  p.fotografije-header{
+    text-align: end;
+    font-size: 3em;
+    padding: 40px;
+}
+
+.fotografije .shadow{
+    background-color: #e8e3de;
+    max-width: 1200px;
+    height:950px;
+    position:relative;
+    top: 110px;
+    
+}
+
+.fotografije .img-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 950px;
+}
+.fotografije .img-holder{
+    display: flex;
+    justify-content:space-around;
+    max-width: 1100px;    
+    flex-wrap: wrap;
+
+}
+.fotografije .img-holder img{
+    width: 323px;
+    height: 329px;
+    margin: 15px;
+}
+.fotografije p:nth-child(2){
+    font-size: 22pt;
+    margin: 80px 0;
+}
