@@ -1,29 +1,35 @@
- .fotografije{
+.fotografije{
     margin-top: 100px;
+    position: relative;
+
 }
 .fotografije  p.fotografije-header{
     text-align: end;
     font-size: 3em;
     padding: 40px;
 }
-
-.fotografije .shadow{
+.fotografije .shadow{ 
     background-color: #e8e3de;
-    max-width: 1200px;
-    height:950px;
-    position:relative;
-    top: 110px;
-    
-}
+    height: calc(1000px - 100px);
 
+    width: 100%;
+
+
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+}
 .fotografije .img-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
     position: relative;
-    bottom: 950px;
+
 }
+
 .fotografije .img-holder{
     display: flex;
     justify-content:space-around;
@@ -40,3 +46,4 @@
     font-size: 22pt;
     margin: 80px 0;
 }
+

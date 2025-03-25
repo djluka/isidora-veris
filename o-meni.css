@@ -1,6 +1,7 @@
 .o-meni{
-    position: relative;
-    bottom:850px ;
+    /* position: relative;
+    bottom:850px ; */
+    margin-top: 500px;
 
 }
 
@@ -9,7 +10,6 @@ p.o-meni-header{
     font-size: 4em;
 }
 .o-meni .o-meni-content{
-    position: relative;
     width: 100%;
     background-color: #e8e3de;
 }
