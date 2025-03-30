@@ -16,6 +16,7 @@ p.o-meni-header {
   line-height: 35px;
   max-width: 1000px;
   margin: 30px auto;
+  padding: 30px;
 }
 
 .o-meni .o-meni-content .comments {
@@ -81,4 +82,12 @@ p.o-meni-header {
     text-align: center;
     line-height: 25px;
     font-size: 1em;
+}
+@media only screen and (max-width: 600px) {
+  .o-meni .o-meni-content p:nth-child(1) {
+    font-size: 1.2em;
+  }
+  p.o-meni-header {
+    font-size: 3em;
+  }
 }
