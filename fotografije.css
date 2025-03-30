@@ -1,49 +1,47 @@
-.fotografije{
-    margin-top: 100px;
-    position: relative;
-
-}
-.fotografije  p.fotografije-header{
-    text-align: end;
-    font-size: 3em;
-    padding: 40px;
-}
-.fotografije .shadow{ 
-    background-color: #e8e3de;
-    height: calc(1000px - 100px);
-
-    width: 100%;
-
-
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -40%);
-}
-.fotografije .img-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    position: relative;
-
+.fotografije {
+  margin-top: 100px;
 }
 
-.fotografije .img-holder{
-    display: flex;
-    justify-content:space-around;
-    max-width: 1100px;    
-    flex-wrap: wrap;
-
-}
-.fotografije .img-holder img{
-    width: 323px;
-    height: 329px;
-    margin: 15px;
-}
-.fotografije p:nth-child(2){
-    font-size: 22pt;
-    margin: 80px 0;
+.fotografije p.fotografije-header {
+  text-align: end;
+  font-size: 3em;
+  padding: 40px;
 }
 
+.fotografije .img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  position: relative;
+}
+
+.fotografije .img-box::before {
+  content: "";
+  display: block;
+  background-color: #e8e3de;
+  width: 100%;
+  height: calc(100% - 300px);
+  position: absolute;
+  top: 100px;
+  z-index: -1;
+}
+
+.fotografije .img-holder {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1100px;
+  flex-wrap: wrap;
+}
+
+.fotografije .img-holder img {
+  width: 323px;
+  height: 329px;
+  margin: 15px;
+}
+
+.fotografije p:nth-child(2) {
+  font-size: 22pt;
+  margin: 80px 0;
+}
