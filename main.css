@@ -22,11 +22,11 @@ body {
 }
 
 nav {
-    height: 150px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
     padding: 5px;
     text-align: center;
 }
@@ -162,12 +162,13 @@ section.header .text .boo p {
     text-decoration: none;
     color: black;
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 60px) {
     
 
     nav {
         height: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
