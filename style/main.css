@@ -1,16 +1,15 @@
 @font-face {
   font-family: TheSeasons;
   src: url(/fonts/Fontspring-DEMO-theseasons-reg.otf);
-}
-@font-face {
+
   font-family: CormorantGaramond;
   src: url(/fonts/CormorantGaramond-Regular.ttf);
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Georgia, Times New Roman, serif;
   scroll-behavior: smooth;
 }
 
