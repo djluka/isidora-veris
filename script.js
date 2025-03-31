@@ -14,15 +14,15 @@ hiddenElements1.forEach((e)=> observer.observe(e));
 
 
 let boxes = document.querySelectorAll('.animationBox');
-let start = 0.2;  
+let start = 0.1;  
 
 boxes.forEach((boxes) => {
     boxes.style.transitionDelay = `${start}s`;
 
     start += 0.1;
 
-    if (start > 0.4) {
-        start = 0.2;
+    if (start >= 0.4) {
+        start = 0.1;
     }
     console.log(boxes)
 
