@@ -34,6 +34,21 @@
     100%{top: 0px;}
   }
 
-  .show{
-    
+  @media only screen and (max-width: 600px) {
+    .scroll-to-top{
+        left: 73%;
+        top: 88%;
+    }
+    .scroll-to-top:hover img{
+        position: relative;
+        animation: bouncing 0.5s linear infinite;
+        transform:scale(1.1);
+    }
+    @keyframes bouncing {
+        0%{top: 0px;}
+        25%{top: -5px;}
+        50%{top: 0px;}
+        75%{top: 5px;}
+        100%{top: 0px;}
+      }
   }
