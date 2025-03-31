@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Georgia, Times New Roman, serif;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -47,25 +48,26 @@ nav menu {
   max-width: 550px;
 }
 
-nav menu button {
+nav menu a {
   font-size: 19px;
   margin: 20px;
   padding: 10px 15px;
   letter-spacing: 2px;
   border: none;
+  text-decoration: none;
   background-color: #e8e3de;
   color: black;
   transition: 0.2s;
   border: 1px solid transparent;
 }
-nav menu button:hover{
+nav menu a:hover{
     transform: scale(1.1);
     transition: 0.2s;
     border: 1px solid black;
 
 
 }
-nav menu button:active {
+nav menu a:active {
   background-color: #b9b5b0;
 }
 

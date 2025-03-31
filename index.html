@@ -3,28 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
 
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/klijenti.css" />
     <link rel="stylesheet" href="style/fotografije.css" />
     <link rel="stylesheet" href="style/o-meni.css" />
     <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/scroll-to-top.css" />
 
 
     <title>Isidoraverisugc</title>
   </head>
   <body>
     <div class="page-wrapper">
+      <div class="scroll-to-top">
+        <img src="/assets/scroll-to-top.png" alt="Loading...">
+      </div>
       <nav>
         <p>UGC PORTFOLIO</p>
         <menu>
-          <button>KLIJENTI</button>
-          <button>O MENI</button>
-          <button>KONTAKT</button>
+          <a href="#klijenti">KLIJENTI</a>
+          <a href="#o-meni">O MENI</a>
+
+          <a href="#kontakt">KONTAKT</a>
         </menu>
       </nav>
-      <section class="header ">
+      <section class="header">
         <div class="proffile-wrapper hidden">
           <img class="profile" src="/assets/profile.png" alt="Loading..." />
         </div>
@@ -53,7 +57,7 @@
         </div>
       </section>
 
-      <div class="klijenti hidden">
+      <div class="klijenti hidden" id="klijenti">
         <p class="klijenti-header">KLIJENTI</p>
 
         <div class="klijenti-holder">
@@ -154,35 +158,71 @@
         </div>
       </div>
 
-      <div class="fotografije hidden">
+      <div class="fotografije hidden" id="fotografije">
         <p class="fotografije-header">Fotografije</p>
         <div class="img-box">
           <div class="img-holder">
-            <img class="hidden animationBox" src="/assets/img1.jpg" alt="Loading..." />
-            <img class="hidden animationBox" src="/assets/img2.jpg" alt="Loading..." />
-            <img class="hidden animationBox" src="/assets/img3.jpg" alt="Loading..." />
+            <img
+              class="hidden animationBox"
+              src="/assets/img1.jpg"
+              alt="Loading..."
+            />
+            <img
+              class="hidden animationBox"
+              src="/assets/img2.jpg"
+              alt="Loading..."
+            />
+            <img
+              class="hidden animationBox"
+              src="/assets/img3.jpg"
+              alt="Loading..."
+            />
           </div>
           <p class="hidden1">
             Ovakva vrsta fotografija ide uz svaki UGC video i služi za Instagram
             PREVIEW.
           </p>
           <div class="img-holder">
-            <img class="hidden animationBox" src="/assets/img4.jpg" alt="Loading..." />
-            <img class="hidden animationBox" src="/assets/img5.jpg" alt="Loading..." />
-            <img class="hidden animationBox" src="/assets/img6.jpg" alt="Loading..." />
-            <img class="hidden animationBox" src="/assets/img7.jpg" alt="Loading..." />
-            <img class="hidden animationBox" src="/assets/img8.jpg" alt="Loading..." />
-            <img class="hidden animationBox" src="/assets/img9.jpg" alt="Loading..." />
+            <img
+              class="hidden animationBox"
+              src="/assets/img4.jpg"
+              alt="Loading..."
+            />
+            <img
+              class="hidden animationBox"
+              src="/assets/img5.jpg"
+              alt="Loading..."
+            />
+            <img
+              class="hidden animationBox"
+              src="/assets/img6.jpg"
+              alt="Loading..."
+            />
+            <img
+              class="hidden animationBox"
+              src="/assets/img7.jpg"
+              alt="Loading..."
+            />
+            <img
+              class="hidden animationBox"
+              src="/assets/img8.jpg"
+              alt="Loading..."
+            />
+            <img
+              class="hidden animationBox"
+              src="/assets/img9.jpg"
+              alt="Loading..."
+            />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="o-meni ">
+    <div class="o-meni" id="o-meni">
       <p class="o-meni-header hidden">o meni</p>
 
       <div class="o-meni-content hidden">
-        <div class="page-wrapper ">
+        <div class="page-wrapper">
           <p class="hidden">
             Trogodišnjim iskustvom stečenim kroz rad u marketingu za mali brend,
             razvila sam razumevanje kako strategija i kreativnost mogu napraviti
@@ -195,9 +235,12 @@
           </p>
 
           <div class="comments">
-
-            <div class="single-comment hidden animationBox ">
-              <img class="img-profile" src="/assets/ellie-mo.jpg" alt="Loaging..." />
+            <div class="single-comment hidden animationBox">
+              <img
+                class="img-profile"
+                src="/assets/ellie-mo.jpg"
+                alt="Loaging..."
+              />
               <div class="stars">
                 <img src="/assets/star.png" alt="Loading..." />
                 <img src="/assets/star.png" alt="Loading..." />
@@ -215,7 +258,11 @@
 
             <div class="comment-box">
               <div class="single-comment hidden animationBox">
-                <img class="img-profile" src="/assets/soppy.jpg" alt="Loaging..." />
+                <img
+                  class="img-profile"
+                  src="/assets/soppy.jpg"
+                  alt="Loaging..."
+                />
                 <div class="stars">
                   <img src="/assets/star.png" alt="Loading..." />
                   <img src="/assets/star.png" alt="Loading..." />
@@ -233,7 +280,11 @@
               </div>
 
               <div class="single-comment hidden animationBox">
-                <img class="img-profile" src="/assets/MK.jpg" alt="Loaging..." />
+                <img
+                  class="img-profile"
+                  src="/assets/MK.jpg"
+                  alt="Loaging..."
+                />
                 <div class="stars">
                   <img src="/assets/star.png" alt="Loading..." />
                   <img src="/assets/star.png" alt="Loading..." />
@@ -254,15 +305,17 @@
         </div>
       </div>
     </div>
-    <div class="footer">
-        <div class="page-wrapper-footer hidden1">
-            <img src="/assets/profile2.jpg" alt="Loading..." />
-            <div class="txt-box">
-                <p>Zainteresovani ste za saradnju?</p>
-                <p>PIŠITE MI</p>
-                <a href="mailto:isidoraverisugc@gmail.com">isidoraverisugc@gmail.com</a>
-            </div>
+    <div class="footer" id="kontakt">
+      <div class="page-wrapper-footer hidden1">
+        <img src="/assets/profile2.jpg" alt="Loading..." />
+        <div class="txt-box">
+          <p>Zainteresovani ste za saradnju?</p>
+          <p>PIŠITE MI</p>
+          <a href="mailto:isidoraverisugc@gmail.com"
+            >isidoraverisugc@gmail.com</a
+          >
         </div>
+      </div>
     </div>
     <script src="/script.js"></script>
   </body>
