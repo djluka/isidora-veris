@@ -33,3 +33,15 @@ const scrollToTopButton = document.querySelector('.scroll-to-top');
 scrollToTopButton.addEventListener('click', () => {
     window.scrollTo(0, 0); 
 });
+
+window.addEventListener('scroll' , ()=>{
+    if(window.pageYOffset>150){
+        console.log("adsad")
+        scrollToTopButton.classList.add("showBtn") 
+    }else{
+        console.log("adsdadasdsadsad")
+
+        scrollToTopButton.classList.remove("showBtn")
+
+    }
+})

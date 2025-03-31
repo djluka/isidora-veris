@@ -15,6 +15,11 @@
 
     cursor: pointer;
     z-index: 1;
+
+
+    opacity:0 ;
+    pointer-events: none;
+    transition: .4s all;
 }
 .scroll-to-top img{
     position: relative;
@@ -25,6 +30,11 @@
     position: relative;
     animation: bouncing 0.5s linear infinite;
     transform:scale(1.1);
+}
+.showBtn{
+    opacity: 1;
+    pointer-events: auto;
+    top: 65%;
 }
 @keyframes bouncing {
     0%{top: 0px;}
@@ -47,5 +57,4 @@
         width: 20px;
         height: 20px;
     }
-
   }
