@@ -19,9 +19,9 @@ let start = 0.2;
 boxes.forEach((boxes) => {
     boxes.style.transitionDelay = `${start}s`;
 
-    start += 0.2;
+    start += 0.1;
 
-    if (start > 0.7) {
+    if (start > 0.4) {
         start = 0.2;
     }
     console.log(boxes)
