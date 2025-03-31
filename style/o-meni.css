@@ -9,6 +9,7 @@ p.o-meni-header {
 .o-meni .o-meni-content {
   width: 100%;
   background-color: #e8e3de;
+  
 }
 .o-meni .o-meni-content p:nth-child(1) {
   text-align: center;
