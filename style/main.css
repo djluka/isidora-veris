@@ -1,3 +1,11 @@
+@font-face {
+  font-family: TheSeasons;
+  src: url(/fonts/Fontspring-DEMO-theseasons-reg.otf);
+}
+@font-face {
+  font-family: CormorantGaramond;
+  src: url(/fonts/CormorantGaramond-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -38,6 +46,7 @@ nav p {
   letter-spacing: 0.2em;
   font-size: none;
   text-decoration: none;
+  font-family: TheSeasons;
 }
 
 nav menu {
@@ -59,6 +68,8 @@ nav menu a {
   color: black;
   transition: 0.2s;
   border: 1px solid transparent;
+  font-family: TheSeasons;
+
 }
 nav menu a:hover{
     transform: scale(1.1);
@@ -128,15 +139,19 @@ section.header .text p.header-txt {
   text-align: center;
   letter-spacing: 5px;
   line-height: 45px;
+
+  font-family: TheSeasons;
+
 }
 
 section.header .text p {
-  font-size: 1em;
-  font-weight: 400;
+  font-size: 1.5em;
   text-align: center;
   margin-bottom: 50px;
-  line-height: 25px;
   letter-spacing: 1px;
+
+  font-family: CormorantGaramond;
+
 }
 
 section.header .text .boo {
@@ -145,6 +160,7 @@ section.header .text .boo {
   align-items: center;
   text-align: center;
   margin-bottom: 15px;
+
 }
 
 section.header .text .boo img.mail    {
@@ -164,9 +180,10 @@ section.header .text .boo img.location    {
 section.header .text .boo a,
 section.header .text .boo p {
   margin: 5px;
-  font-size: 15pt;
+  font-size: 16pt;
   text-decoration: none;
   color: black;
+  font-family: CormorantGaramond;
 
 }
 @media only screen and (max-width: 600px) {

@@ -9,6 +9,8 @@
     padding: 40px;
 
     transition-delay: 0.4s;
+
+    font-family: TheSeasons;
 }
 
 .footer img{
@@ -29,6 +31,8 @@
 
     font-size: 3em;
     text-align: center;
+    font-family: TheSeasons;
+
 
 }
 .footer .txt-box p:nth-child(2){
@@ -44,6 +48,7 @@
     margin-top: 30px;
     border-radius: 50px;
     transition: 0.2s;
+    
 }
 .footer .txt-box a:hover{
     background-color: black;

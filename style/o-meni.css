@@ -5,6 +5,8 @@
 p.o-meni-header {
   text-align: center;
   font-size: 4em;
+  font-family: TheSeasons;
+
 }
 .o-meni .o-meni-content {
   width: 100%;
@@ -18,6 +20,8 @@ p.o-meni-header {
   max-width: 1000px;
   margin: 30px auto;
   padding: 30px;
+  font-family: CormorantGaramond;
+
 }
 
 .o-meni .o-meni-content .comments {
@@ -82,7 +86,10 @@ p.o-meni-header {
 .o-meni .o-meni-content .comments .single-comment p{
     text-align: center;
     line-height: 25px;
-    font-size: 1em;
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: CormorantGaramond;
+
 }
 @media only screen and (max-width: 600px) {
   .o-meni .o-meni-content p:nth-child(1) {

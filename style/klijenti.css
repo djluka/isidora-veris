@@ -6,6 +6,8 @@
     padding: 20px;
     font-size: 3em;
     font-weight: none;
+    font-family: TheSeasons;
+
 }
 
 .klijenti-holder {
@@ -44,9 +46,13 @@
     top: 60%;
     transform: translateY(-60%);
     border: 1px solid black;
+
+    font-family: CormorantGaramond;
+
 }
 
 .single-klijenti :nth-child(3) {
     font-size: 13pt;
+    
 
 }
