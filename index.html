@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
 
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="klijenti.css" />
-    <link rel="stylesheet" href="fotografije.css" />
-    <link rel="stylesheet" href="o-meni.css" />
-    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/klijenti.css" />
+    <link rel="stylesheet" href="style/fotografije.css" />
+    <link rel="stylesheet" href="style/o-meni.css" />
+    <link rel="stylesheet" href="style/footer.css" />
 
 
     <title>Isidoraverisugc</title>
@@ -24,12 +24,12 @@
           <button>KONTAKT</button>
         </menu>
       </nav>
-      <section class="header">
+      <section class="header hidden">
         <div class="proffile-wrapper">
           <img class="profile" src="/assets/profile.png" alt="Loading..." />
         </div>
 
-        <div class="text">
+        <div class="text hidden">
           <p class="header-txt">ISIDORA VERIŠ<br />UGC CREATOR</p>
 
           <p>
@@ -53,11 +53,11 @@
         </div>
       </section>
 
-      <div class="klijenti">
+      <div class="klijenti hidden">
         <p class="klijenti-header">KLIJENTI</p>
 
         <div class="klijenti-holder">
-          <div class="single-klijenti">
+          <div class="single-klijenti hidden">
             <video src="#nekivideo"></video>
             <p>MIKOS</p>
             <p>
@@ -66,7 +66,7 @@
               pažnju gledaoca
             </p>
           </div>
-          <div class="single-klijenti">
+          <div class="single-klijenti hidden">
             <video src="#nekivideo"></video>
             <p>SOPPY</p>
             <p>
@@ -74,7 +74,7 @@
               vizualima i efektima za privlačenje pažnje gledaoca
             </p>
           </div>
-          <div class="single-klijenti">
+          <div class="single-klijenti hidden">
             <video src="#nekivideo"></video>
             <p>Ellie&Mo</p>
             <p>
@@ -82,12 +82,12 @@
               estetičnog načina snimanja
             </p>
           </div>
-          <div class="single-klijenti">
+          <div class="single-klijenti hidden">
             <video src="#nekivideo"></video>
             <p>Ellie&Mo</p>
             <p>Predstavljanje proizvoda u estetičnom okruženju.</p>
           </div>
-          <div class="single-klijenti">
+          <div class="single-klijenti hidden">
             <video src="#nekivideo"></video>
             <p>Professional</p>
             <p>
@@ -95,7 +95,7 @@
               scena pomoću storytellinga.
             </p>
           </div>
-          <div class="single-klijenti">
+          <div class="single-klijenti hidden">
             <video src="#nekivideo"></video>
             <p>HelloKids</p>
             <p>
@@ -103,7 +103,7 @@
               profesionalnog editovanja videa koji drže pažnju gledaoca
             </p>
           </div>
-          <div class="single-klijenti">
+          <div class="single-klijenti hidden">
             <video src="#nekivideo"></video>
             <p>SOPPY</p>
             <p>
@@ -111,7 +111,7 @@
               vizualima i efektima za privlačenje pažnje gledaoca
             </p>
           </div>
-          <div class="single-klijenti">
+          <div class="single-klijenti hidden">
             <video src="#nekivideo"></video>
             <p>Ellie&Mo</p>
             <p>
@@ -119,7 +119,7 @@
               estetičnog načina snimanja
             </p>
           </div>
-          <div class="single-klijenti">
+          <div class="single-klijenti hidden">
             <video src="#nekivideo"></video>
             <p>iMOVE NYC</p>
             <p>
@@ -127,7 +127,7 @@
               editovanjem dobijenog materijala
             </p>
           </div>
-          <div class="single-klijenti">
+          <div class="single-klijenti hidden">
             <video src="#nekivideo"></video>
             <p>SOPPY</p>
             <p>
@@ -135,7 +135,7 @@
               vizualima i efektima za privlačenje pažnje gledaoca
             </p>
           </div>
-          <div class="single-klijenti">
+          <div class="single-klijenti hidden">
             <video src="#nekivideo"></video>
             <p>Ellie&Mo</p>
             <p>
@@ -143,7 +143,7 @@
               reakcija publike i zajednice
             </p>
           </div>
-          <div class="single-klijenti">
+          <div class="single-klijenti hidden">
             <video src="#nekivideo"></video>
             <p>Professional</p>
             <p>
@@ -154,13 +154,13 @@
         </div>
       </div>
 
-      <div class="fotografije">
+      <div class="fotografije hidden">
         <p class="fotografije-header">Fotografije</p>
         <div class="img-box">
           <div class="img-holder">
-            <img src="/assets/img1.jpg" alt="Loading..." />
-            <img src="/assets/img2.jpg" alt="Loading..." />
-            <img src="/assets/img3.jpg" alt="Loading..." />
+            <img class="hidden" src="/assets/img1.jpg" alt="Loading..." />
+            <img class="hidden" src="/assets/img2.jpg" alt="Loading..." />
+            <img class="hidden" src="/assets/img3.jpg" alt="Loading..." />
           </div>
           <p>
             Ovakva vrsta fotografija ide uz svaki UGC video i služi za Instagram
@@ -264,5 +264,6 @@
             </div>
         </div>
     </div>
+    <script src="/script.js"></script>
   </body>
 </html>
