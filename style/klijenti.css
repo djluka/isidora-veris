@@ -43,7 +43,7 @@
     position: relative;
     top: 60%;
     transform: translateY(-60%);
-
+    border: 1px solid black;
 }
 
 .single-klijenti :nth-child(3) {
