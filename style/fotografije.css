@@ -36,11 +36,20 @@
   max-width: 1100px;
   flex-wrap: wrap;
 }
-
-.fotografije .img-holder img {
+.fotografije .img-holder span{
   width: 323px;
   height: 329px;
   margin: 15px;
+  overflow: hidden;
+
+}
+.fotografije .img-holder img {
+  width: 323px;
+  height: 329px;
+  transition: 0.3s all ease;
+}
+.fotografije .img-holder img:hover {
+  transform: scale(1.1);
 }
 
 .fotografije p:nth-child(2) {
