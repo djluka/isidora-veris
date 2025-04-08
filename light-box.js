@@ -12,20 +12,20 @@ closeButton.innerHTML = "&times"
 
 
 
-// const images = document.querySelectorAll('.img-holder img')
-// images.forEach(image =>{
-//     image.addEventListener('click' , e =>{
-//         lightbox.classList.add('active')
-//         const img = document.createElement('img')
-//         img.src = image.src
-//         while(lightbox_inner.firstChild){
-//             lightbox_inner.removeChild(lightbox_inner.firstChild)
-//         }
+const images = document.querySelectorAll('.img-holder img')
+images.forEach(image =>{
+    image.addEventListener('click' , e =>{
+        lightbox.classList.add('active')
+        const img = document.createElement('img')
+        img.src = image.src
+        while(lightbox_inner.firstChild){
+            lightbox_inner.removeChild(lightbox_inner.firstChild)
+        }
 
-//         lightbox_inner.appendChild(img)
-//         lightbox_inner.appendChild(closeButton)
-//     })
-// })
+        lightbox_inner.appendChild(img)
+        lightbox_inner.appendChild(closeButton)
+    })
+})
 
 lightbox.addEventListener('click', e=>{
     console.log(closeButton)
