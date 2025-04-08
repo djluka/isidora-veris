@@ -26,9 +26,9 @@ boxes.forEach((boxes) => {
     if (start >= 0.4) {
         start = 0.1;
     }
-    console.log(boxes)
-
 });
+
+
 
 const scrollToTopButton = document.querySelector('.scroll-to-top');
 
@@ -37,13 +37,12 @@ scrollToTopButton.addEventListener('click', () => {
 });
 
 window.addEventListener('scroll' , ()=>{
-    if(window.pageYOffset>150){
-        console.log("adsad")
+    if(window.pageYOffset > 150){
         scrollToTopButton.classList.add("showBtn") 
     }else{
-        console.log("adsdadasdsadsad")
 
         scrollToTopButton.classList.remove("showBtn")
 
     }
 })
+

@@ -46,10 +46,11 @@
 .fotografije .img-holder img {
   width: 323px;
   height: 329px;
-  transition: 0.3s all ease;
+  transition: 0.2s all ease;
 }
 .fotografije .img-holder img:hover {
-  transform: scale(1.1);
+  transform: scale(1.3);
+  transition-delay: 0s;
 }
 
 .fotografije p:nth-child(2) {
@@ -63,5 +64,4 @@
   .fotografije p:nth-child(2) {
     font-size: 15pt;
   }
-  
 }
