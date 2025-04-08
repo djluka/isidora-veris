@@ -11,19 +11,38 @@
     <link rel="stylesheet" href="style/footer.css" />
     <link rel="stylesheet" href="style/scroll-to-top.css" />
     <link rel="stylesheet" href="style/lightbox.css" />
+    <link rel="stylesheet" href="style/burger-menu.css">
 
     <title>Isidoraverisugc</title>
   </head>
   <body>
     <div class="page-wrapper">
+
       <nav>
         <p>UGC PORTFOLIO</p>
+
         <menu>
           <a href="#klijenti">KLIJENTI</a>
           <a href="#o-meni">O MENI</a>
           <a href="#kontakt">KONTAKT</a>
         </menu>
+
+        <div id="menuToggle">
+          <input type="checkbox" id="menuCheckbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <menu id="burger_menu">
+            <a href="#klijenti">KLIJENTI</a>
+            <a href="#o-meni">O MENI</a>
+            <a href="#kontakt">KONTAKT</a>
+          </menu>
+        </div>  
+
       </nav>
+
       <section class="header">
         <div class="proffile-wrapper hidden">
           <img class="profile" src="/assets/profile.png" alt="Loading..." />
