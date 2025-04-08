@@ -2,6 +2,10 @@ const lightbox = document.createElement('div')
 lightbox.id = "lightbox"
 document.body.appendChild(lightbox)
 
+const lightbox_inner = document.createElement('div')
+lightbox_inner.id = "lightbox_inner"
+lightbox.appendChild(lightbox_inner)
+
 const closeButton = document.createElement('div')
 closeButton.class = "closebutton";
 closeButton.innerHTML = "&times"
@@ -14,13 +18,13 @@ images.forEach(image =>{
         lightbox.classList.add('active')
         const img = document.createElement('img')
         img.src = image.src
-        while(lightbox.firstChild){
-            lightbox.removeChild(lightbox.firstChild)
+        while(lightbox_inner.firstChild){
+            lightbox_inner.removeChild(lightbox_inner.firstChild)
         }
-        console.log(lightbox)
+        console.log(lightbox_inner)
 
-        lightbox.appendChild(img)
-        lightbox.appendChild(closeButton)
+        lightbox_inner.appendChild(img)
+        lightbox_inner.appendChild(closeButton)
     })
 })
 
