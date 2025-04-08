@@ -88,21 +88,23 @@ nav menu a:active {
 }
 
 @media only screen and (max-width: 600px) {
+    nav menu {
+        display: none;
+    }
     nav  {
+        margin: 20px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         max-width: 500px;
       }
-  nav menu {
-    display: none;
-  }
+
   #menuToggle {
     
     display: block;
     position: absolute;
-    right: 50px;
+    right: 20px;
   
     z-index: 1;
   
@@ -159,6 +161,7 @@ nav menu a:active {
     transform: translate(-50%, 0);
 
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    display: none;
   }
 
   #menu a {
