@@ -21,7 +21,6 @@ images.forEach(image =>{
         while(lightbox_inner.firstChild){
             lightbox_inner.removeChild(lightbox_inner.firstChild)
         }
-        console.log(lightbox_inner)
 
         lightbox_inner.appendChild(img)
         lightbox_inner.appendChild(closeButton)
@@ -29,6 +28,7 @@ images.forEach(image =>{
 })
 
 lightbox.addEventListener('click', e=>{
-    if(e.target == e.currentTarget)
+    console.log(closeButton)
+    if(e.target == e.currentTarget || e.target == closeButton)
         lightbox.classList.remove('active')
 })
