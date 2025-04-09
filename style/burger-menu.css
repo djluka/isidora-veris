@@ -24,6 +24,7 @@ nav menu {
   align-items: center;
   flex-wrap: wrap;
   max-width: 550px;
+  position: relative;
 }
 
 nav menu a {
@@ -101,7 +102,6 @@ nav menu a:active {
       }
 
   #menuToggle {
-    
     display: block;
     position: absolute;
     right: 30px;
@@ -112,13 +112,11 @@ nav menu a:active {
     user-select: none;
 
   }
-  #menuToggle input {
+  #menuToggle input {  
     display: block;
     width: 40px;
     height: 32px;
     position: absolute;
-
-  
     cursor: pointer;
   
     opacity: 0;
@@ -134,7 +132,6 @@ nav menu a:active {
     height: 4px;
     margin: 5px 0 5px 0;
     position: relative;
-  
     background: #cdcdcd;
     border-radius: 3px;
   
@@ -150,18 +147,24 @@ nav menu a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 65px;
     box-sizing: border-box;
     overflow: hidden;
-    background: #ededed;
-    list-style-type: none;
+    background: rgba(237, 237, 237,0.9);
+
     -webkit-font-smoothing: antialiased;
 
     transform: translate(100%, 0);
+    transform-origin: 0% 0%;
 
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    width: 80vw;
+
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+  
   }
 
   #menu a {
@@ -170,12 +173,12 @@ nav menu a:active {
     cursor: pointer;
   }
 
-  #menuToggle input:checked ~ menu {
-    transform: translate(-81%, 0);
-    position: absolute;
-    max-width: 90vw;
-    top: 40px;
-
-    
+  #menuToggle input:checked ~ #burger_menu {
+    transform: none
   }
+  
+}
+#burger_menu a label{
+  background-color: red;
+  width: 100%;
 }

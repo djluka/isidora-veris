@@ -46,3 +46,21 @@ window.addEventListener('scroll' , ()=>{
     }
 })
 
+// =========================================
+// burger menu
+// =========================================
+const menu = document.querySelector('#menuToggle');
+const checkBox = document.querySelector('#menuCheckbox');
+const body = document.querySelector('body');
+
+checkBox.addEventListener("change" , function(){
+    if(checkBox.checked){
+        menu.style.position = 'fixed'
+        scrollToTopButton.style.display = 'none'
+    }else{
+        menu.style.position = 'absolute'
+        scrollToTopButton.style.display = 'flex'
+
+    }
+    
+})
