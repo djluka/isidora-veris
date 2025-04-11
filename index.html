@@ -11,13 +11,12 @@
     <link rel="stylesheet" href="style/footer.css" />
     <link rel="stylesheet" href="style/scroll-to-top.css" />
     <link rel="stylesheet" href="style/lightbox.css" />
-    <link rel="stylesheet" href="style/burger-menu.css">
+    <link rel="stylesheet" href="style/burger-menu.css" />
 
     <title>Isidoraverisugc</title>
   </head>
   <body>
     <div class="page-wrapper">
-
       <nav>
         <p>UGC PORTFOLIO</p>
 
@@ -34,20 +33,29 @@
           <span></span>
           <span></span>
 
-          <menu id="burger_menu">
-            <label for="menuCheckbox"><a href="#klijenti">KLIJENTI</a></label>
-            
-            <a href="#o-meni">
-              <label for="menuCheckbox">O MENI</label>
-            </a>
-            <a href="#kontakt">
-              <label for="menuCheckbox">KONTAKT</label>
-            </a>
-          </menu>
-        </div>  
+          <ul id="burger_menu" >
+            <li>
+              <a href="#klijenti">
+                <label for="menuCheckbox" onclick="this.parentNode.click();" >KLIJENTI</label>
+              </a>
+            </li>
+            <li>
+              <a href="#o-meni">
+                <label for="menuCheckbox" onclick="this.parentNode.click();" >O MENI</label>
+              </a>
+            </li>
+            <li>
+              <a href="#kontakt">
+                <label for="menuCheckbox" onclick="this.parentNode.click();" >KONTAKT</label>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
       </nav>
 
-      <section class="header ">
+      <section class="header">
         <div class="proffile-wrapper hidden">
           <img class="profile" src="/assets/profile.png" alt="Loading..." />
         </div>

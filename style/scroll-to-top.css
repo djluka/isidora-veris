@@ -3,8 +3,7 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    left: 90%;
-    top: 70%;
+    left: 85%;
 
     background-color: #e8e3de;
     box-sizing: border-box;
@@ -15,7 +14,6 @@
 
     cursor: pointer;
     z-index: 1;
-
 
     opacity:0 ;
     pointer-events: none;
@@ -34,7 +32,7 @@
 .showBtn{
     opacity: 1;
     pointer-events: auto;
-    top: 65%;
+    top: 80%;
 }
 @keyframes bouncing {
     0%{top: 0px;}
@@ -48,9 +46,6 @@
     .scroll-to-top{
         left: 73%;
         top: 88%;
-    }
-    .scroll-to-top:hover img{
-       
     }
     .scroll-to-top img{
         position: relative;

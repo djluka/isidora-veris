@@ -54,15 +54,14 @@ nav menu a:active {
 }
 
 #menuToggle input {
-
   display: none;
 }
 
 #menuToggle span {
-    display: none;
+  display: none;
 }
-#burger_menu{
-    display: none;
+#burger_menu {
+  display: none;
 }
 #menuToggle span:first-child {
   transform-origin: 0% 0%;
@@ -89,43 +88,45 @@ nav menu a:active {
 }
 
 @media only screen and (max-width: 600px) {
-    nav menu {
-        display: none;
-    }
-    nav  {
-        margin: 20px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 500px;
-      }
+  nav menu {
+    display: none;
+  }
+  nav {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+  }
 
   #menuToggle {
     display: block;
     position: absolute;
     right: 30px;
-  
+
     z-index: 1;
-  
+
     -webkit-user-select: none;
     user-select: none;
-
   }
-  #menuToggle input {  
+  #menuToggle a {
+    text-decoration: none;
+    color: black;
+  }
+  #menuToggle input {
     display: block;
     width: 40px;
     height: 32px;
     position: absolute;
     cursor: pointer;
-  
+
     opacity: 0;
     z-index: 2;
-  
-    -webkit-touch-callout: none;
 
+    -webkit-touch-callout: none;
   }
-  
+
   #menuToggle span {
     display: block;
     width: 33px;
@@ -134,22 +135,32 @@ nav menu a:active {
     position: relative;
     background: #cdcdcd;
     border-radius: 3px;
-  
+
     z-index: 1;
-  
+
     transform-origin: 4px 0px;
-  
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+
+    transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1),
+                background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), 
+                opacity 0.2s ease;
   }
+  #menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
   #burger_menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    list-style-type: none;
     box-sizing: border-box;
     overflow: hidden;
-    background: rgba(237, 237, 237,0.9);
+    background: rgba(237, 237, 237, 0.9);
 
     -webkit-font-smoothing: antialiased;
 
@@ -164,21 +175,19 @@ nav menu a:active {
 
     width: 100vw;
     height: 100vh;
-  
   }
 
-  #menu a {
-    padding: 10px 0;
+  #burger_menu li {
+    padding: 10px;
+    margin: 10px;
     font-size: 22px;
     cursor: pointer;
+      background-color: #e8e3de;
   }
-
+  #burger_menu li label {
+    cursor: pointer;
+  }
   #menuToggle input:checked ~ #burger_menu {
-    transform: none
+    transform: none;
   }
-  
-}
-#burger_menu a label{
-  background-color: red;
-  width: 100%;
 }
