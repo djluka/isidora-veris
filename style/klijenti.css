@@ -20,19 +20,19 @@
 }
 
 .single-klijenti {
-    max-width: 280px;
+    width: 280px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 50px;
     text-align: center;
-
 }
 
 .single-klijenti video {
-    background-color: rgb(194, 178, 178);
     width: 100%;
-    height: 480px;
+    padding: 0;
+    margin: 0;
 }
 
 .single-klijenti :nth-child(2) {
