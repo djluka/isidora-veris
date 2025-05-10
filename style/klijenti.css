@@ -1,82 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
 .klijenti {
-    margin-top: 150px;
+  margin-top: 150px;
+  text-align: left;
 }
+
 .klijenti p.klijenti-header {
-    padding: 20px;
-    font-size: 3em;
-    font-weight: none;
-    font-family: TheSeasons;
+  padding: 20px;
+  font-size: 3em;
+  font-weight: normal;
+  font-family: TheSeasons;
 
 }
-.klijenti .pre-btn,.klijenti .nxt-btn{
-    border: none;
-    width: 10vw;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, #fff 100%);
-    cursor: pointer;
-    z-index: 9;
+
+.klijenti-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  max-width: 1200px;
+  overflow: hidden;
 }
-.klijenti .pre-btn {
-    transform: rotate(-90deg);
-    left: 0;
+
+.pre-btn,
+.nxt-btn {
+  cursor: pointer;
+  margin: 40px;
+  border: none;
+  padding: 20px;
+  border-radius: 50%;
+    background-color: #e8e3de;
+
 }
-.klijenti .nxt-btn {
-    transform: rotate(90deg);
-    right: 0;
+
+.pre-btn img {
+  transform: rotate(-90deg);
 }
-.klijenti .pre-btn img,
-.klijenti .nxt-btn img{
-    width: 50px;
-    height: 50px;
-    opacity: 0.2;
+
+.nxt-btn img {
+  transform: rotate(90deg);
 }
-.klijenti .pre-btn img:hover,
-.klijenti .nxt-btn img:hover{
-    opacity: 1;
+
+.pre-btn img,
+.nxt-btn img {
+  width: 50px;
 }
-.product-card {
-    flex: 0 0 auto;
-    width: 250px;
-    height: 450px;
-    margin-right: 40px;
-  }
+
+.klijenti-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  max-width: 1000px;
+}
+
+.klijenti-slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
 .klijenti-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    max-width: 300px;
-    height: 300px;
-    margin-left: 20px;
-    margin-right: 20px;
+  flex: 0 0 calc((100% - 40px) / 3); /* 3 kartice + 2x gap */
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #e8e3de;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .klijenti-card video {
-    width: 200px;
-    padding: 0;
-    margin: 0;
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-.klijenti-card :nth-child(2) {
-    background-color: white;
-    font-size: 15pt;
-    max-width: 200px;
-    margin: 0 auto;
+.klijenti-card p:nth-child(2) {
+  background-color: white;
+  font-size: 15pt;
+  max-width: 200px;
+  margin: 0 auto 10px;
+  padding: 15px;
+  border-radius: 50px;
+  border: 1px solid black;
+  position: relative;
+  top: -5%;
+}
+
+.klijenti-card p:nth-child(3) {
+  font-size: 13pt;
+  font-family: CormorantGaramond;
+  padding: 10px;
+  margin-top: -20px;
+
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .klijenti-wrap {
+    margin: 40px auto;
+    flex-direction: column;
+  }
+
+  .klijenti-slider {
+    max-width: 90%;
+    gap: 10px;
+  }
+
+  .klijenti-card {
+    flex: 0 0 90%; /* Prikaz jedne kartice */
+  }
+
+  .pre-btn,
+  .nxt-btn {
+    margin: 20px;
     padding: 15px;
-    border-radius: 50px;
-    position: relative;
-    top: 60%;
-    transform: translateY(-60%);
-    border: 1px solid black;
-}
+  }
 
-.klijenti-card :nth-child(3) {
-    font-size: 13pt;
-    font-family: CormorantGaramond;
+  .pre-btn img,
+  .nxt-btn img {
+    width: 30px;
+  }
 }
